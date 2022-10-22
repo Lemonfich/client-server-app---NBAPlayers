@@ -7,12 +7,8 @@
 
 import UIKit
 
-class PlayersViewController: UIViewController, UITableViewDataSource {
+class PlayersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    
-    
-    
-    
     
     
     override func viewDidLoad() {
@@ -33,7 +29,16 @@ class PlayersViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var storyboard = UIStoryboard(name: "Main", bundle: .main)
+        var viewController = storyboard.instantiateViewController(withIdentifier: "PlayersDetailsViewController")
+        
+        navigationController?.pushViewController(viewController, animated: true)
+        
+    }
+    
+    
+    
  
 
 }
