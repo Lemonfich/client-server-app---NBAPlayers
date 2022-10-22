@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		8E2ABECD29018A1B00433634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2ABECC29018A1B00433634 /* AppDelegate.swift */; };
 		8E2ABECF29018A1B00433634 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2ABECE29018A1B00433634 /* SceneDelegate.swift */; };
-		8E2ABED129018A1B00433634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2ABED029018A1B00433634 /* ViewController.swift */; };
 		8E2ABED429018A1B00433634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2ABED229018A1B00433634 /* Main.storyboard */; };
 		8E2ABED629018A1C00433634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E2ABED529018A1C00433634 /* Assets.xcassets */; };
 		8E2ABED929018A1C00433634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2ABED729018A1C00433634 /* LaunchScreen.storyboard */; };
+		8E2ABEE52901921100433634 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2ABEE42901921100433634 /* PlayersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E2ABEC929018A1B00433634 /* client server app - NBAPlayers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "client server app - NBAPlayers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2ABECC29018A1B00433634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E2ABECE29018A1B00433634 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E2ABED029018A1B00433634 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E2ABED329018A1B00433634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E2ABED529018A1C00433634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E2ABED829018A1C00433634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E2ABEDA29018A1C00433634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E2ABEE42901921100433634 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +56,9 @@
 		8E2ABECB29018A1B00433634 /* client server app - NBAPlayers */ = {
 			isa = PBXGroup;
 			children = (
+				8E2ABEE42901921100433634 /* PlayersViewController.swift */,
 				8E2ABECC29018A1B00433634 /* AppDelegate.swift */,
 				8E2ABECE29018A1B00433634 /* SceneDelegate.swift */,
-				8E2ABED029018A1B00433634 /* ViewController.swift */,
 				8E2ABED229018A1B00433634 /* Main.storyboard */,
 				8E2ABED529018A1C00433634 /* Assets.xcassets */,
 				8E2ABED729018A1C00433634 /* LaunchScreen.storyboard */,
@@ -138,9 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E2ABED129018A1B00433634 /* ViewController.swift in Sources */,
 				8E2ABECD29018A1B00433634 /* AppDelegate.swift in Sources */,
 				8E2ABECF29018A1B00433634 /* SceneDelegate.swift in Sources */,
+				8E2ABEE52901921100433634 /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
