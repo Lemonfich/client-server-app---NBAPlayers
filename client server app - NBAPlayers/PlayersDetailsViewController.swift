@@ -9,10 +9,17 @@ import UIKit
 
 class PlayersDetailsViewController: UIViewController {
 
+    var player: Player?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = player?.fullname
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
 
-        // Do any additional setup after loading the view.
+
+
     }
     
 
