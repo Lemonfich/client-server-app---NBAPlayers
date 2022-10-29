@@ -66,16 +66,48 @@
             </objects>
             <point key="canvasLocation" x="29.23076923076923" y="-5.6872037914691944"/>
         </scene>
-        <!--Players Details View Controller.swift-->
+        <!--Players Details View Controller-->
         <scene sceneID="YBU-p7-75f">
             <objects>
-                <viewController storyboardIdentifier="PlayersDetailsViewController" id="OG4-cG-bXa" customClass="PlayersDetailsViewController.swift" customModule="client_server_app___NBAPlayers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayersDetailsViewController" id="OG4-cG-bXa" customClass="PlayersDetailsViewController" customModule="client_server_app___NBAPlayers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5pa-gz-gxN">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BR7-th-0jY">
+                                <rect key="frame" x="16" y="103" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="6,6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wn-qI-trc">
+                                <rect key="frame" x="345" y="103" width="29" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvC-tf-On6">
+                                <rect key="frame" x="16" y="47" width="15" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="H4I-ro-ucF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PvC-tf-On6" firstAttribute="top" secondItem="H4I-ro-ucF" secondAttribute="top" constant="16" id="2w9-ot-kj8"/>
+                            <constraint firstItem="H4I-ro-ucF" firstAttribute="trailing" secondItem="1wn-qI-trc" secondAttribute="trailing" constant="16" id="3wq-ud-UIH"/>
+                            <constraint firstItem="BR7-th-0jY" firstAttribute="top" secondItem="PvC-tf-On6" secondAttribute="bottom" constant="16" id="4fv-m1-wXr"/>
+                            <constraint firstItem="BR7-th-0jY" firstAttribute="leading" secondItem="H4I-ro-ucF" secondAttribute="leading" constant="16" id="JWS-bi-ksX"/>
+                            <constraint firstItem="PvC-tf-On6" firstAttribute="leading" secondItem="H4I-ro-ucF" secondAttribute="leading" constant="16" id="WKp-f6-nfm"/>
+                            <constraint firstItem="1wn-qI-trc" firstAttribute="centerY" secondItem="BR7-th-0jY" secondAttribute="centerY" id="Xch-BU-ZBM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hightLable" destination="1wn-qI-trc" id="ohs-Jw-VOw"/>
+                        <outlet property="positionLable" destination="PvC-tf-On6" id="wii-iG-tqQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brv-Hm-ZVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

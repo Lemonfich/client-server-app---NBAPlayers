@@ -9,6 +9,14 @@ import UIKit
 
 class PlayersDetailsViewController: UIViewController {
 
+    
+
+    @IBOutlet weak var positionLable: UILabel!
+    
+    @IBOutlet weak var hightLable: UILabel!
+    
+    
+    
     var player: Player?
     
     
@@ -16,7 +24,8 @@ class PlayersDetailsViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = player?.fullname
         navigationController?.navigationBar.prefersLargeTitles = true
-        
+        positionLable.text = player?.position
+        hightLable.text = player?.height
 
 
 

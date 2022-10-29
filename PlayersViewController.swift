@@ -61,11 +61,13 @@ class PlayersViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var storyboard = UIStoryboard(name: "Main", bundle: .main)
-        var viewController = storyboard.instantiateViewController(withIdentifier: "PlayersDetailsViewController")
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "PlayersDetailsViewController") as! PlayersDetailsViewController
+        
+        viewController.player = Players [indexPath.row]
         
         navigationController?.pushViewController(viewController, animated: true)
-        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     
