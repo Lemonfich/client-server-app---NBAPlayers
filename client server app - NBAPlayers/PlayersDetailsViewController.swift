@@ -15,10 +15,13 @@ class PlayersDetailsViewController: UIViewController {
     
     @IBOutlet weak var hightLable: UILabel!
     
+    @IBOutlet weak var teamButton: UIButton!
+    
+
     
     
     var player: Player?
-    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,20 +29,29 @@ class PlayersDetailsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         positionLable.text = player?.position
         hightLable.text = player?.height
+        teamButton.setTitle(player?.teamName, for: .normal)
 
 
+    }
 
+
+    
+    @IBAction func teamButtoOnTapped(_ sender: Any) {
+        
+        
+        let TeamDetailsViewController = storyboard!.instantiateViewController(withIdentifier: "TeamDetailsViewController") as! TeamDetailsViewController
+        
+                
+        navigationController?.pushViewController(TeamDetailsViewController, animated: true)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
     }
-    */
+    
+    
 
-}
+
+//название комыдны, город, конференция
+//Lakers, Los Angeles, west
+//Heat, Miami, East

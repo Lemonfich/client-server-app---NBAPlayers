@@ -11,7 +11,7 @@
         <!--Players View Controller-->
         <scene sceneID="p33-CZ-Pa8">
             <objects>
-                <viewController id="CVe-Gc-iUg" customClass="PlayersViewController" customModule="client_server_app___NBAPlayers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayersViewController" id="CVe-Gc-iUg" customClass="PlayersViewController" customModule="client_server_app___NBAPlayers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hcc-F7-vej">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,6 +92,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfb-Lp-DkG">
+                                <rect key="frame" x="95" y="161" width="200" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="teamButtoOnTapped:" destination="OG4-cG-bXa" eventType="touchUpInside" id="fMh-RT-dCf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H4I-ro-ucF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -99,19 +107,62 @@
                             <constraint firstItem="PvC-tf-On6" firstAttribute="top" secondItem="H4I-ro-ucF" secondAttribute="top" constant="16" id="2w9-ot-kj8"/>
                             <constraint firstItem="H4I-ro-ucF" firstAttribute="trailing" secondItem="1wn-qI-trc" secondAttribute="trailing" constant="16" id="3wq-ud-UIH"/>
                             <constraint firstItem="BR7-th-0jY" firstAttribute="top" secondItem="PvC-tf-On6" secondAttribute="bottom" constant="16" id="4fv-m1-wXr"/>
+                            <constraint firstItem="Wfb-Lp-DkG" firstAttribute="leading" secondItem="H4I-ro-ucF" secondAttribute="leading" constant="95" id="Eo6-o9-YhN"/>
                             <constraint firstItem="BR7-th-0jY" firstAttribute="leading" secondItem="H4I-ro-ucF" secondAttribute="leading" constant="16" id="JWS-bi-ksX"/>
                             <constraint firstItem="PvC-tf-On6" firstAttribute="leading" secondItem="H4I-ro-ucF" secondAttribute="leading" constant="16" id="WKp-f6-nfm"/>
                             <constraint firstItem="1wn-qI-trc" firstAttribute="centerY" secondItem="BR7-th-0jY" secondAttribute="centerY" id="Xch-BU-ZBM"/>
+                            <constraint firstItem="Wfb-Lp-DkG" firstAttribute="top" secondItem="BR7-th-0jY" secondAttribute="bottom" constant="37" id="mBC-uh-rqm"/>
+                            <constraint firstItem="H4I-ro-ucF" firstAttribute="trailing" secondItem="Wfb-Lp-DkG" secondAttribute="trailing" constant="95" id="t9u-yz-Dty"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mIp-7a-zPr"/>
                     <connections>
                         <outlet property="hightLable" destination="1wn-qI-trc" id="ohs-Jw-VOw"/>
                         <outlet property="positionLable" destination="PvC-tf-On6" id="wii-iG-tqQ"/>
+                        <outlet property="teamButton" destination="Wfb-Lp-DkG" id="Amb-kv-hSe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brv-Hm-ZVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848" y="-6"/>
+            <point key="canvasLocation" x="871" y="-6"/>
+        </scene>
+        <!--Team Details View Controller-->
+        <scene sceneID="jqG-4q-jVe">
+            <objects>
+                <viewController storyboardIdentifier="TeamDetailsViewController" id="op1-BJ-fPn" customClass="TeamDetailsViewController" customModule="client_server_app___NBAPlayers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fdf-0F-RVV">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="986-xf-JF0">
+                                <rect key="frame" x="16" y="47" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHz-Uh-bhC">
+                                <rect key="frame" x="16" y="76" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZx-XS-NLV">
+                                <rect key="frame" x="332" y="76" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gNz-ds-1EJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5H-lo-Hql" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="-6"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IoG-7c-0rK">

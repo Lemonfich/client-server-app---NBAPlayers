@@ -70,8 +70,8 @@ class PlayersViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    
-    
- 
 
 }
+
+
+

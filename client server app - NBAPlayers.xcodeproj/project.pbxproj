@@ -15,6 +15,7 @@
 		8E2ABEE52901921100433634 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2ABEE42901921100433634 /* PlayersViewController.swift */; };
 		8EC432E2290959BF0073647E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC432E1290959BF0073647E /* Player.swift */; };
 		8EE13C0629040F900021AE8A /* PlayersDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE13C0529040F900021AE8A /* PlayersDetailsViewController.swift */; };
+		8EE41F55290E8A7D004D1490 /* TeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE41F54290E8A7D004D1490 /* TeamDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8E2ABEE42901921100433634 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = SOURCE_ROOT; };
 		8EC432E1290959BF0073647E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		8EE13C0529040F900021AE8A /* PlayersDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersDetailsViewController.swift; sourceTree = "<group>"; };
+		8EE41F54290E8A7D004D1490 /* TeamDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				8E2ABEE42901921100433634 /* PlayersViewController.swift */,
 				8EE13C0529040F900021AE8A /* PlayersDetailsViewController.swift */,
+				8EE41F54290E8A7D004D1490 /* TeamDetailsViewController.swift */,
 				8E2ABECC29018A1B00433634 /* AppDelegate.swift */,
 				8EC432E1290959BF0073647E /* Player.swift */,
 				8E2ABECE29018A1B00433634 /* SceneDelegate.swift */,
@@ -148,6 +151,7 @@
 				8E2ABECF29018A1B00433634 /* SceneDelegate.swift in Sources */,
 				8EE13C0629040F900021AE8A /* PlayersDetailsViewController.swift in Sources */,
 				8EC432E2290959BF0073647E /* Player.swift in Sources */,
+				8EE41F55290E8A7D004D1490 /* TeamDetailsViewController.swift in Sources */,
 				8E2ABEE52901921100433634 /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
