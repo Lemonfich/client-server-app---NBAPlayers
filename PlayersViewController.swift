@@ -9,31 +9,7 @@ import UIKit
 
 class PlayersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    let Players: [Player] = [
-        
-        Player(
-            firstName: "Lebron",
-            lastName: "James",
-            teamName: "Los Angeles Lakers",
-            position: "SF",
-            height: "6,8"
-        ),
-        Player(
-            firstName: "Anthony",
-            lastName: "Davis",
-            teamName: "Los Angeles Lakers",
-            position: "PF",
-            height: "6,6"
-        ),
-        Player(
-            firstName: "jimmy",
-            lastName: "Butler",
-            teamName: "Miami Heat",
-            position: "SG",
-            height: "6,6"
-        )
-    
-    ]
+    var Players: [Player] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,16 +31,19 @@ class PlayersViewController: UIViewController, UITableViewDataSource, UITableVie
         let player = Players [indexPath.row]
         
         cell.textLabel?.text = player.fullname
-        cell.detailTextLabel?.text = player.teamName
+        cell.detailTextLabel?.text = player.team.name
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        
         let viewController = storyboard.instantiateViewController(withIdentifier: "PlayersDetailsViewController") as! PlayersDetailsViewController
         
+        
         viewController.player = Players [indexPath.row]
+        
         
         navigationController?.pushViewController(viewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)

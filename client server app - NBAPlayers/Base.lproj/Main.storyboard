@@ -134,23 +134,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="986-xf-JF0">
-                                <rect key="frame" x="16" y="47" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E/W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZx-XS-NLV">
+                                <rect key="frame" x="343.33333333333331" y="63" width="30.666666666666686" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHz-Uh-bhC">
-                                <rect key="frame" x="16" y="76" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZx-XS-NLV">
-                                <rect key="frame" x="332" y="76" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conferenc:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dH-Ws-ADa">
+                                <rect key="frame" x="16" y="63" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -158,7 +149,17 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gNz-ds-1EJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gNz-ds-1EJ" firstAttribute="trailing" secondItem="JZx-XS-NLV" secondAttribute="trailing" constant="16" id="BmN-T6-OvL"/>
+                            <constraint firstItem="8dH-Ws-ADa" firstAttribute="top" secondItem="gNz-ds-1EJ" secondAttribute="top" constant="16" id="NWj-jk-2QQ"/>
+                            <constraint firstItem="8dH-Ws-ADa" firstAttribute="leading" secondItem="gNz-ds-1EJ" secondAttribute="leading" constant="16" id="eIW-3a-D4S"/>
+                            <constraint firstItem="JZx-XS-NLV" firstAttribute="centerY" secondItem="8dH-Ws-ADa" secondAttribute="centerY" id="ht3-P3-LEv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confLable" destination="JZx-XS-NLV" id="d44-qw-083"/>
+                        <outlet property="confStaticLable" destination="8dH-Ws-ADa" id="zvw-58-Jpr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5H-lo-Hql" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

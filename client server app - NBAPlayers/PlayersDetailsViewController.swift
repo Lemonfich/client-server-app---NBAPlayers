@@ -25,11 +25,12 @@ class PlayersDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.title = player?.fullname
         navigationController?.navigationBar.prefersLargeTitles = true
         positionLable.text = player?.position
         hightLable.text = player?.height
-        teamButton.setTitle(player?.teamName, for: .normal)
+        teamButton.setTitle(player?.team.name, for: .normal)
 
 
     }
@@ -38,10 +39,12 @@ class PlayersDetailsViewController: UIViewController {
     
     @IBAction func teamButtoOnTapped(_ sender: Any) {
         
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let TeamDetailsViewController = storyboard.instantiateViewController(withIdentifier: "TeamDetailsViewController") as! TeamDetailsViewController
         
-        let TeamDetailsViewController = storyboard!.instantiateViewController(withIdentifier: "TeamDetailsViewController") as! TeamDetailsViewController
+        TeamDetailsViewController.team = player?.team
         
-                
+        
         navigationController?.pushViewController(TeamDetailsViewController, animated: true)
         
     }
@@ -52,6 +55,3 @@ class PlayersDetailsViewController: UIViewController {
     
 
 
-//название комыдны, город, конференция
-//Lakers, Los Angeles, west
-//Heat, Miami, East

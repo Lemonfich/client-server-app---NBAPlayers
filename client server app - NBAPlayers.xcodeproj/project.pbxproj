@@ -14,8 +14,10 @@
 		8E2ABED929018A1C00433634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2ABED729018A1C00433634 /* LaunchScreen.storyboard */; };
 		8E2ABEE52901921100433634 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2ABEE42901921100433634 /* PlayersViewController.swift */; };
 		8EC432E2290959BF0073647E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC432E1290959BF0073647E /* Player.swift */; };
+		8ED415752916BBEC0057CF36 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED415742916BBEC0057CF36 /* ApiClient.swift */; };
 		8EE13C0629040F900021AE8A /* PlayersDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE13C0529040F900021AE8A /* PlayersDetailsViewController.swift */; };
 		8EE41F55290E8A7D004D1490 /* TeamDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE41F54290E8A7D004D1490 /* TeamDetailsViewController.swift */; };
+		8EE41F57290EA511004D1490 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE41F56290EA511004D1490 /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +30,10 @@
 		8E2ABEDA29018A1C00433634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E2ABEE42901921100433634 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = SOURCE_ROOT; };
 		8EC432E1290959BF0073647E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		8ED415742916BBEC0057CF36 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		8EE13C0529040F900021AE8A /* PlayersDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersDetailsViewController.swift; sourceTree = "<group>"; };
 		8EE41F54290E8A7D004D1490 /* TeamDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailsViewController.swift; sourceTree = "<group>"; };
+		8EE41F56290EA511004D1490 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +71,10 @@
 				8EE41F54290E8A7D004D1490 /* TeamDetailsViewController.swift */,
 				8E2ABECC29018A1B00433634 /* AppDelegate.swift */,
 				8EC432E1290959BF0073647E /* Player.swift */,
+				8EE41F56290EA511004D1490 /* Team.swift */,
 				8E2ABECE29018A1B00433634 /* SceneDelegate.swift */,
 				8E2ABED229018A1B00433634 /* Main.storyboard */,
+				8ED415742916BBEC0057CF36 /* ApiClient.swift */,
 				8E2ABED529018A1C00433634 /* Assets.xcassets */,
 				8E2ABED729018A1C00433634 /* LaunchScreen.storyboard */,
 				8E2ABEDA29018A1C00433634 /* Info.plist */,
@@ -149,6 +155,8 @@
 			files = (
 				8E2ABECD29018A1B00433634 /* AppDelegate.swift in Sources */,
 				8E2ABECF29018A1B00433634 /* SceneDelegate.swift in Sources */,
+				8EE41F57290EA511004D1490 /* Team.swift in Sources */,
+				8ED415752916BBEC0057CF36 /* ApiClient.swift in Sources */,
 				8EE13C0629040F900021AE8A /* PlayersDetailsViewController.swift in Sources */,
 				8EC432E2290959BF0073647E /* Player.swift in Sources */,
 				8EE41F55290E8A7D004D1490 /* TeamDetailsViewController.swift in Sources */,
