@@ -17,7 +17,7 @@ protocol ApiClient {
     
 }
 
-struct apiClientImpl: ApiClient {
+struct ApiClientImpl: ApiClient {
     
     
     
@@ -34,6 +34,7 @@ struct apiClientImpl: ApiClient {
                 completion(.failure(apiError.noData))
                 return
             }
+            
             do {
                 let decoder = JSONDecoder ()
                 let response = try decoder.decode(playersResponse.self, from: data )
