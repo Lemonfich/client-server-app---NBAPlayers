@@ -29,6 +29,9 @@ struct ApiClientImpl: ApiClient {
         let urlrequest = URLRequest(url: url)
         
         let dataTask = session.dataTask(with: urlrequest, completionHandler: { data ,response , error in
+            
+            
+            
             guard let data = data else {
                 
                 completion(.failure(apiError.noData))

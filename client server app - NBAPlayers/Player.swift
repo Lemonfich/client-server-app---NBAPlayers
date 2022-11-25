@@ -33,11 +33,7 @@ struct Player: Decodable {
         case position = "position"
         case heightInches = "height_inches"
         case heightFeet = "height_feet"
-        
-        
     }
-    
-    
 }
 
 
@@ -47,6 +43,3 @@ let Heat = Team(name: "Heat", city: "Miami", conference: "East")
 
 
 
-//название комыдны, город, конференция
-//Lakers, Los Angeles, west
-//Heat, Miami, East
