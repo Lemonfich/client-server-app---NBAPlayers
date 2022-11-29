@@ -16,7 +16,7 @@ struct gamesResponse: Decodable {
 
 struct Game: Decodable {
     
-    let data : String?
+    let data : String
     let homeTeam : HomeTeam
     let homeTeamScore : Int
     let period : Int
@@ -37,6 +37,22 @@ struct Game: Decodable {
     }
 }
 
+struct VisitorTeam: Decodable {
 
+   let abbreviation : String
+   let city : String
+   let conference : String
+   let division : String
+   let name : String
+}
+
+struct HomeTeam: Decodable {
+
+    let abbreviation : String
+    let city : String
+    let conference : String
+    let division : String
+    let name : String
+}
 
 

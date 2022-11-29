@@ -7,12 +7,3 @@
 
 import Foundation
 
-
-struct HomeTeam: Decodable {
-
-    let abbreviation : String
-    let city : String
-    let conference : String
-    let division : String
-    let name : String
-}

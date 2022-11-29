@@ -45,14 +45,24 @@ class GamesViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         let game = games [indexPath.row]
         
-        cell.textLabel?.text = "\(game.homeTeam.abbreviation) - \(game.visitorTeam.abbreviation)"
-        cell.detailTextLabel?.text = "\(game.homeTeam.name) - \(game.visitorTeam.name)"
+        cell.textLabel?.text = game.status
+        cell.detailTextLabel?.text = "\(game.homeTeam.city) - \(game.visitorTeam.city) | Date: \(game.data)"
         
         return cell
     }
     
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        
+        let viewController = storyboard.instantiateViewController(withIdentifier: "GameDetailsViewControllerCorrect") as! GameDetailsViewControllerCorrect
+        
+       viewController.game = games [indexPath.row]
+        
+        navigationController?.pushViewController(viewController, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+          }
     
     
     
